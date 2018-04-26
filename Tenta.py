@@ -143,15 +143,18 @@ class Shape:
 ############################################## 9
 
 def dubbelt(string):
-    amount = 0
+    amount = 0 ##initiating amount variable
     for i in range(0, len(string)):
+        #here we select a char in the string, starting from index 0
         char = string[i]
         for i in range(0, len(string)):
+            ##iterate over the string to see how many times the selected chars exists
             if string[i] == char:
+                ##if it finds it, add 1 to amount
                 amount += 1
 
-    ## you can also use > 1: instead of if amount:, amount is "True" if it is 1 or over
-    if amount:
+    ## you can also use "if amount:", amount is "True" if it is 1 or over
+    if amount > 1:
         return True
     else:
         return False
@@ -164,7 +167,7 @@ print()
 ############################################ 10
 
 
-## it "zips" the file together, creating "tuples" (tuples == pair of variables or types)
+## it "zips" the file together like a zipper, creating "tuples" (tuples == pair of variables or types)
 
 print(list(zip([2015, 2016, 2017], [30, 33, 35])))
 
