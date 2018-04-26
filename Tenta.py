@@ -150,7 +150,8 @@ def dubbelt(string):
             if string[i] == char:
                 amount += 1
 
-    if amount > 1:
+    ## you can also use > 1: instead of if amount:, amount is "True" if it is 1 or over
+    if amount:
         return True
     else:
         return False
