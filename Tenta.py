@@ -3,12 +3,11 @@
 ########################################   1
 
 print(type(42))
-## type() prints the actual type of the argument passed, type("test") prints String because "test" is a string
-print("test")
+## type() prints the actual type of the argument passed, type("test") prints String (str) because "test" is a string
+print(type("test"))
 ## type(42) types Int because 42 is a whole number (integer)
-## type(0.5) would print double because it is not a whole number
-print(0.5)
-
+## type(0.5) would print float because it is not a whole number
+print(type(0.5))
 
 ## empty print is just to create a new line in console, for readability. not for the assignment
 print()
@@ -16,11 +15,12 @@ print()
 
 print("puppa"[3:])
 
-
 # prints "pa", 3 is index position and : means print all following chars
 
 ###
 print()
+
+
 ################################### 3
 
 def monthOutput(month):
@@ -100,6 +100,8 @@ print("Fakultet 4 : " + str(fakultet(4)))
 
 ##
 print()
+
+
 ########################################### 7
 
 ## Basically #3, use a dictionary
@@ -114,7 +116,6 @@ def getPerson(personnummer):
 
     }
 
-
     ##om det inte är ett giltigt personnummer så skickas "non valid input" tillbaks som string
     return persons.get(personnummer, "non valid input")
 
@@ -122,6 +123,8 @@ def getPerson(personnummer):
 print(getPerson(960602))
 ##
 print()
+
+
 ############################################# 8
 
 ## 3d objects consists of layers
@@ -135,6 +138,7 @@ class Layer:
 ## multiple layers create a shape
 class Shape:
     shape = {Layer, Layer, Layer, Layer}
+
 
 ############################################## 9
 
@@ -161,9 +165,9 @@ print()
 
 ## it "zips" the file together, creating "tuples" (tuples == pair of variables or types)
 
-print (list(zip([2015,2016,2017], [30,33,35])))
+print(list(zip([2015, 2016, 2017], [30, 33, 35])))
 
-numberDigits = [1, 2 ,3]
+numberDigits = [1, 2, 3]
 
 numberWords = ["One", "Two", "Three"]
 
@@ -171,4 +175,4 @@ numberWords = ["One", "Two", "Three"]
 print()
 ##
 ## now it prints (1, one) because it pairs them together. it works the same way if you have even more lists, creating 3-tuples
-print (list(zip(numberDigits, numberWords)))
+print(list(zip(numberDigits, numberWords)))
