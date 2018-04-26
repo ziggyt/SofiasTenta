@@ -4,8 +4,10 @@
 
 print(type(42))
 ## type() prints the actual type of the argument passed, type("test") prints String because "test" is a string
+print("test")
 ## type(42) types Int because 42 is a whole number (integer)
 ## type(0.5) would print double because it is not a whole number
+print(0.5)
 
 
 ## empty print is just to create a new line in console, for readability. not for the assignment
@@ -46,8 +48,8 @@ def monthOutput(month):
     return dict.get(month, "non valid input")
 
 
-##month = input("Skriv en månad ")
-##print(monthOutput(month))
+month = input("Skriv en månad ")
+print(monthOutput(month))
 
 
 ##################################4
@@ -112,6 +114,8 @@ def getPerson(personnummer):
 
     }
 
+
+    ##om det inte är ett giltigt personnummer så skickas "non valid input" tillbaks som string
     return persons.get(personnummer, "non valid input")
 
 
@@ -120,7 +124,7 @@ print(getPerson(960602))
 print()
 ############################################# 8
 
-## 3d objects have x y z coords
+## 3d objects consists of layers
 
 class Layer:
     x = 0
@@ -128,6 +132,7 @@ class Layer:
     z = 0
 
 
+## multiple layers create a shape
 class Shape:
     shape = {Layer, Layer, Layer, Layer}
 
